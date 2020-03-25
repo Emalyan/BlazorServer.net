@@ -1,9 +1,27 @@
-﻿@using BlazorServerApp.Components.Card
+﻿@page "/"
+
+@inject IJSRuntime JSRuntime;
+@using BlazorServerApp.Components.Card
 
 <h3>Table</h3>
 
-<Card/>
+@foreach (var card in Cards)
+{
+    <Card Id="@card.Id" Value="@card.Value" />
+}
+<Card AddCard="AddCard" IsAddCart="true" />
+<button @onclick="Send">Send</button>
 
 @code {
+    public List<CardData> Cards = new List<CardData>();
 
+    public void AddCard()
+    {
+        Cards.Add(new CardData());
+    }
+
+    public async void Send()
+    {
+        await JSRuntime.InvokeVoidAsync("send", Cards);
+    }
 }

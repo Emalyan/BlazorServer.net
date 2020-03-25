@@ -1,22 +1,12 @@
-﻿@page "/"
+﻿@using BlazorServerApp.Shared
 
-@using BlazorServerApp.Components.Table
-
-<h3>App</h3>
-<button @onclick="IncrementCount">Hello</button>
-<h1>Current count: @currentCount</h1>
-<component type="typeof(Table)" render-mode="ServerPrerendered" />
-
-@code {
-    private int currentCount = 0;
-
-    private void IncrementCount()
-    {
-        currentCount++;
-
-        if(currentCount == 15)
-        {
-            currentCount = 0;
-        }
-    }
-}
+<Router AppAssembly="@typeof(Program).Assembly">
+    <Found Context="routeData">
+        <RouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)" />
+    </Found>
+    <NotFound>
+        <LayoutView Layout="@typeof(MainLayout)">
+            <h1>Not Found</h1>
+        </LayoutView>
+    </NotFound>
+</Router>

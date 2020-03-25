@@ -39,3 +39,11 @@ D:\Blazor\Server\BlazorServerApp\BlazorServerApp\obj\Debug\netcoreapp3.1\Razor\A
 D:\Blazor\Server\BlazorServerApp\BlazorServerApp\obj\Debug\netcoreapp3.1\Razor\Components\Card\Card.razor.g.cs
 D:\Blazor\Server\BlazorServerApp\BlazorServerApp\obj\Debug\netcoreapp3.1\Razor\Components\Table\Table.razor.g.cs
 D:\Blazor\Server\BlazorServerApp\BlazorServerApp\obj\Debug\netcoreapp3.1\Razor\_Imports.razor.g.cs
+D:\Blazor\Server\BlazorServerApp\BlazorServerApp\obj\Debug\netcoreapp3.1\RazorDeclaration\Shared\MainLayout.razor.g.cs
+D:\Blazor\Server\BlazorServerApp\BlazorServerApp\obj\Debug\netcoreapp3.1\Razor\Shared\MainLayout.razor.g.cs
+D:\Blazor\Server\BlazorServerApp\BlazorServerApp\obj\Debug\netcoreapp3.1\RazorDeclaration\Components\Card\CardInput.razor.g.cs
+D:\Blazor\Server\BlazorServerApp\BlazorServerApp\obj\Debug\netcoreapp3.1\Razor\Components\Card\CardInput.razor.g.cs
+D:\Blazor\Server\BlazorServerApp\BlazorServerApp\obj\Debug\netcoreapp3.1\RazorDeclaration\Components\Card\CardWrapper.razor.g.cs
+D:\Blazor\Server\BlazorServerApp\BlazorServerApp\obj\Debug\netcoreapp3.1\Razor\Components\Card\CardWrapper.razor.g.cs
+D:\Blazor\Server\BlazorServerApp\BlazorServerApp\obj\Debug\netcoreapp3.1\RazorDeclaration\Components\Card\AppendCard.razor.g.cs
+D:\Blazor\Server\BlazorServerApp\BlazorServerApp\obj\Debug\netcoreapp3.1\Razor\Components\Card\AppendCard.razor.g.cs

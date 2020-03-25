@@ -1,29 +1,25 @@
-﻿<link href="/css/styles.css" rel="stylesheet" type="text/css">
-
-<input type="text"
-       class="card @((!string.IsNullOrEmpty(CurrentValue) && IsDisabled ? "disabled_card" : string.Empty))"
-       value="@CurrentValue"
-       @oninput="HandleChange"       
-       @onblur="HandleBlur" 
-       @onclick="HandleClick" />
-<div>@CurrentValue</div>
+﻿<CardWrapper>
+    @if (IsAddCart)
+    {
+        <AppendCard HandleClick="AddCard" />
+    }
+    else
+    {
+        <CardInput />
+    }
+</CardWrapper>
 
 @code {
-    public string CurrentValue { get; set; }
-    private bool IsDisabled { get; set; }
+    [Parameter]
+    public string Id { get; set; }
 
-    private void HandleChange(ChangeEventArgs eventArgs)
-    {
-        CurrentValue = eventArgs.Value.ToString();
-    }
+    [Parameter]
+    public string Value { get; set; }
 
-    public void HandleBlur()
-    {
-        IsDisabled = true;
-    }
+    [Parameter]
+    public bool IsAddCart { get; set; }
 
-    public void HandleClick()
-    {
-        IsDisabled = false;
-    }
+    [Parameter]
+    public EventCallback AddCard { get; set; }
+
 }

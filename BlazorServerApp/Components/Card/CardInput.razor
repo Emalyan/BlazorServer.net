@@ -1,0 +1,23 @@
+﻿<link href="/css/styles.css" rel="stylesheet" type="text/css">
+
+<input type="text"
+       class="@((!string.IsNullOrEmpty(Value) && IsDisabled ? "disabled_card" : string.Empty))"
+       @bind-value="@Value"       
+       @onblur="HandleBlur"
+       @onclick="HandleClick" />
+
+@code {
+    [Parameter]
+    public string Value { get; set; }
+    private bool IsDisabled { get; set; }   
+
+    public void HandleBlur()
+    {
+        IsDisabled = true;
+    }
+
+    public void HandleClick()
+    {
+        IsDisabled = false;
+    }
+}
