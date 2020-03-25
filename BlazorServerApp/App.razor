@@ -1,0 +1,22 @@
+﻿@page "/"
+
+@using BlazorServerApp.Components.Table
+
+<h3>App</h3>
+<button @onclick="IncrementCount">Hello</button>
+<h1>Current count: @currentCount</h1>
+<component type="typeof(Table)" render-mode="ServerPrerendered" />
+
+@code {
+    private int currentCount = 0;
+
+    private void IncrementCount()
+    {
+        currentCount++;
+
+        if(currentCount == 15)
+        {
+            currentCount = 0;
+        }
+    }
+}

@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "5jOdPgK9kC7NzGW8WT48fo820v9rp+1NpmGT5G45QtKEeVgA2pgR7qeqJDGcatZ9paE6H4YgVkrO+xK7N//5vw==",
+  "success": true,
+  "projectFilePath": "D:\\Blazor\\Server\\BlazorServerApp\\BlazorServerApp\\BlazorServerApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\i.emelyanenko\\.nuget\\packages\\bootstrap\\4.4.1\\bootstrap.4.4.1.nupkg.sha512",
+    "C:\\Users\\i.emelyanenko\\.nuget\\packages\\jquery\\3.0.0\\jquery.3.0.0.nupkg.sha512",
+    "C:\\Users\\i.emelyanenko\\.nuget\\packages\\popper.js\\1.16.0\\popper.js.1.16.0.nupkg.sha512"
+  ],
+  "logs": []
+}
