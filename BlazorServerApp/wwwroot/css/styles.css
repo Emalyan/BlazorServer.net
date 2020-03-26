@@ -10,6 +10,7 @@ h1 {
     width: 200px;
     height: 50px;
     margin: 15px;
+    position: relative;
 }
 
 .card input, .card div {    
@@ -22,8 +23,25 @@ h1 {
     padding: 2px;
 }
 
+.remove {
+    position: absolute;
+    right: -14px;
+    top: -9px;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    background-color: lightgray;
+    border: 1px solid;
+    border-radius: 15px;
+    cursor: pointer;
+    z-index: 15;
+}
+
 .disabled_card {
     background-color: darkgray;
     opacity: 0.7;
     cursor: pointer;
 }
+
+.row { display: flex; }
+    

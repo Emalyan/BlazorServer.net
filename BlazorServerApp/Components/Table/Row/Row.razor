@@ -1,0 +1,25 @@
+﻿@using BlazorServerApp.Components.Card
+@using BlazorServerApp.Components.Card.Model
+@using BlazorServerApp.Components.Table.Row.Models
+@inject IJSRuntime JSRuntime;
+
+<div class="row">
+    @foreach (var card in Model.Cards)
+    {
+        <CardWrapper>
+            <Remove HandleClick="@(() => card.RemoveCard(Model.Cards))" />
+            <Card Model="card" />
+        </CardWrapper>
+    }
+    <AppendCard HandleClick="AddCard" />
+</div>
+
+@code {
+    [Parameter]
+    public RowModel Model { get; set; }
+
+    public void AddCard()
+    {
+        Model.Cards.Add(new CardModel(Model.Cards.Count + 1));
+    }
+}
